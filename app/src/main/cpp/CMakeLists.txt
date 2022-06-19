@@ -10,6 +10,8 @@ cmake_minimum_required(VERSION 3.18.1)
 
 project("rainbow")
 
+set(CMAKE_CXX_FLAGS "-O3")
+
 # Creates and names a library, sets it as either STATIC
 # or SHARED, and provides the relative paths to its source code.
 # You can define multiple libraries, and CMake builds them for you.

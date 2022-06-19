@@ -15,7 +15,7 @@ public class Sorter {
         this.arraySize = size;
         this.items = new int[size];
         for (int i = 0; i < arraySize; i++) {
-            items[i] = arraySize - i;
+            items[i] = Double.valueOf(Math.random() * 100000.0).intValue();
         }
     }
 

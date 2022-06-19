@@ -6,6 +6,7 @@
 #define RAINBOW_CSORTER_H
 
 #include "iostream"
+#include <stdlib.h>
 
 class csorter {
 public:
@@ -13,8 +14,9 @@ public:
     int items[ARRAY_SIZE];
 
     csorter() {
+        srand(time(NULL));   // Initialization, should only be called once.
         for (int i = 0; i < ARRAY_SIZE; i++) {
-            items[i] = ARRAY_SIZE - i;
+            items[i] = rand();
         }
     }
 
@@ -32,6 +34,7 @@ public:
             }
         }
     }
+
 };
 
 #endif //RAINBOW_CSORTER_H
